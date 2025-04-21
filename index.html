@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-white font-sans">
+    <!-- Sección Hero -->
+    <section class="hero-section">
+        <!-- Círculos Decorativos -->
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+        <div class="circle circle5"></div>
+        <div class="circle circle6"></div>
+        <div class="circle circle7"></div>
+        <div class="circle circle8"></div>
+
+        <div class="hero-content">
+            <img src="https://via.placeholder.com/150" alt="Foto de Perfil" class="profile-image">
+            <h1>John Doe</h1>
+            <h2>Desarrollador de Software</h2>
+            <p>Creando soluciones elegantes para problemas complejos</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Ver Mi Trabajo</a>
+                <a href="#contact" class="btn btn-secondary">Contactarme</a>
+                <a href="https://github.com" class="btn btn-blue">Dame una estrella en GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de Información -->
+    <section class="info-bar">
+        <div class="info-items">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt text-red"></i>
+                <span>Ubicación: San Francisco, CA</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock text-purple"></i>
+                <span>Hora Local: PST - 01:36 PM</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-check-circle text-green"></i>
+                <span>Disponible para contratar</span>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://twitter.com"><i class="fab fa-twitter text-blue"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram text-pink"></i></a>
+            <a href="https://linkedin.com"><i class="fab fa-linkedin text-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!-- Sección de Estadísticas -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat">
+                <i class="fas fa-rocket"></i>
+                <p class="stat-number">50+</p>
+                <p>Proyectos Completados</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-users"></i>
+                <p class="stat-number">30+</p>
+                <p>Clientes Satisfechos</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-star"></i>
+                <p class="stat-number">100+</p>
+                <p>Estrellas en GitHub</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-file-alt"></i>
+                <p class="stat-number">15+</p>
+                <p>Artículos Técnicos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades y Proyectos -->
+    <section id="projects" class="skills-projects-section">
+        <div class="section-container">
+            <!-- Habilidades -->
+            <div class="content-block">
+                <div class="content-header">
+                    <h2>Habilidades</h2>
+                </div>
+                <div class="content-body">
+                    <ul class="skills-list">
+                        <li class="skill-item skill-card">
+                            <i class="fab fa-js text-yellow"></i>
+                            <div>
+                                <p class="skill-name">JavaScript</p>
+                                <p class="skill-level">Experto</p>
+                            </div>
+                        </li>
+                        <li class="skill-item skill-card">
+                            <i class="fab fa-js text-blue"></i>
+                            <div>
+                                <p class="skill-name">TypeScript</p>
+                                <p class="skill-level">Experto</p>
+                            </div>
+                        </li>
+                        <li class="skill-item skill-card">
+                            <i class="fab fa-react text-purple"></i>
+                            <div>
+                                <p class="skill-name">React</p>
+                                <p class="skill-level">Experto</p>
+                            </div>
+                        </li>
+                        <li class="skill-item skill-card">
+                            <i class="fab fa-node-js text-green"></i>
+                            <div>
+                                <p class="skill-name">Node.js</p>
+                                <p class="skill-level">Avanzado</p>
+                            </div>
+                        </li>
+                        <li class="skill-item skill-card">
+                            <i class="fab fa-python text-green"></i>
+                            <div>
+                                <p class="skill-name">Python</p>
+                                <p class="skill-level">Avanzado</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Proyectos Destacados -->
+            <div class="content-block">
+                <div class="content-header">
+                    <h2>Proyectos Destacados</h2>
+                    <a href="#" class="view-all">Ver todos los proyectos</a>
+                </div>
+                <div class="content-body">
+                    <div class="projects-list">
+                        <!-- Proyecto 1 -->
+                        <div class="project-card">
+                            <img src="https://via.placeholder.com/100" alt="App de Chat con IA" class="project-image">
+                            <div class="project-details">
+                                <h3>Aplicación de Chat con IA</h3>
+                                <p>Aplicación de chat en tiempo real con respuestas impulsadas por IA. Utiliza GPT de OpenAI para conversaciones inteligentes y presenta una interfaz moderna e intuitiva.</p>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">OpenAI</span>
+                                    <span class="tag">WebSocket</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Proyecto 2 -->
+                        <div class="project-card">
+                            <img src="https://via.placeholder.com/100" alt="Sitio Web de Portafolio" class="project-image">
+                            <div class="project-details">
+                                <h3>Sitio Web de Portafolio</h3>
+                                <p>Un portafolio personal construido con Astro y React. Incluye un diseño moderno, soporte para modo oscuro y rendimiento optimizado.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Astro</span>
+                                    <span class="tag">React</span>
+                                    <span class="tag">TailwindCSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Experiencia Laboral -->
+    <section class="experience-section">
+        <h2>Experiencia Laboral</h2>
+        <div class="experience-list">
+            <!-- Experiencia 1 -->
+            <div class="experience-item">
+                <div class="timeline-bar"></div>
+                <div class="experience-header">
+                    <div>
+                        <h3>Ingeniero de Software Senior</h3>
+                        <p class="company">Tech Solutions INC.</p>
+                    </div>
+                    <span class="experience-duration">2021 - Presente</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Lideré el desarrollo de aplicaciones nativas en la nube utilizando arquitectura de microservicios</li>
+                    <li>Mentoría a desarrolladores junior y realización de revisiones de código</li>
+                    <li>Mejoré el rendimiento del sistema en un 40% a través de optimizaciones</li>
+                </ul>
+                <div class="experience-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+            <!-- Experiencia 2 -->
+            <div class="experience-item">
+                <div class="timeline-bar"></div>
+                <div class="experience-header">
+                    <div>
+                        <h3>Desarrollador de Software</h3>
+                        <p class="company">Digital Innovations</p>
+                    </div>
+                    <span class="experience-duration">2019 - 2021</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Desarrollé aplicaciones web full-stack para clientes empresariales</li>
+                    <li>Implementé tuberías de CI/CD reduciendo el tiempo de despliegue en un 60%</li>
+                </ul>
+                <div class="experience-tags">
+                    <span class="tag">Vue.js</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials-section">
+        <h2>Lo Que Dicen de Mí</h2>
+        <div class="testimonials-grid">
+            <!-- Testimonio 1 -->
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/50" alt="Sarah Johnson" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p>"John es un desarrollador excepcional que constantemente entrega trabajo de alta calidad. Su atención al detalle y habilidades para resolver problemas son sobresalientes."</p>
+                    <p class="testimonial-name">Sarah Johnson</p>
+                    <p class="testimonial-title">CTO en TechCorp</p>
+                </div>
+            </div>
+            <!-- Testimonio 2 -->
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/50" alt="Michael Chen" class="testimonial-image">
+                <div class="testimonial-content">
+                    <p>"Trabajar con John fue un placer. No solo entregó el proyecto a tiempo, sino que también proporcionó valiosas ideas que mejoraron nuestra arquitectura general."</p>
+                    <p class="testimonial-name">Michael Chen</p>
+                    <p class="testimonial-title">Gerente de Ingeniería en InnovateLabs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact-section">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <!-- Formulario -->
+            <div class="contact-form">
+                <div class="form-fields">
+                    <div class="form-field">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="tu@email.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" placeholder="Tu mensaje..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </div>
+            </div>
+            <!-- Información de Contacto -->
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope text-blue"></i>
+                        <span>contact@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone text-blue"></i>
+                        <span>+1(234) 567-890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt text-blue"></i>
+                        <span>San Francisco, CA</span>
+                    </div>
+                </div>
+                <h3>Horario de Oficina</h3>
+                <p>Lunes - Viernes</p>
+                <p>9:00 AM - 6:00 PM PST</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 John Doe. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
