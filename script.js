@@ -22,14 +22,14 @@ if (contactForm) {
         if (name && email && message) {
             // Here you would typically send the form data to a server
             // For now, just show an alert
-            alert('Thank you for your message! I will get back to you soon.');
+            alert('Muchas Gracias por tu mensaje! te contestaré pronto.');
             
             // Clear form
             document.getElementById('name').value = '';
             document.getElementById('email').value = '';
             document.getElementById('message').value = '';
         } else {
-            alert('Please fill in all fields.');
+            alert('Porfavor rellena todas las casillas.');
         }
     });
 }
