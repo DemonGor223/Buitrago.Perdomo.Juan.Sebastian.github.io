@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #6F4E37;
+    --secondary-color: #E3D5C6;
+    --accent-color: #A87C4F;
+    --text-dark: #2D1E12;
+    --text-light: #F9F6F2;
+    --success-color: #4CAF50;
+    --error-color: #f44336;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.header {
+    background: var(--text-light);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.cta-btn {
+    background: var(--primary-color);
+    color: white !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(45,30,18,0.5), rgba(45,30,18,0.5)),
+                url('cafe-hero.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    margin-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1.5rem;
+}
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.coffee-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.coffee-card:hover {
+    transform: translateY(-10px);
+}
+
+.footer {
+    background: var(--text-dark);
+    color: var(--text-light);
+    padding: 4rem 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Formulario de Contacto (contacto.html) */
+.contact-section {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
