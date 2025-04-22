@@ -455,50 +455,50 @@
     </section>
 
     <!-- Sección de Contacto -->
-    <section id="contact" class="contact-section">
-        <h2>Contacto</h2>
-        <div class="contact-container">
-            <!-- Formulario -->
-            <div class="contact-form">
-                <div class="form-fields">
-                    <div class="form-field">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" placeholder="Tu nombre">
-                    </div>
-                    <div class="form-field">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" placeholder="tu@email.com">
-                    </div>
-                    <div class="form-field">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" placeholder="Tu mensaje..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+<section id="contact" class="contact-section">
+    <h2>Contacto</h2>
+    <div class="contact-container">
+        <!-- Formulario -->
+        <form action="https://formspree.io/f/xwpoejjd" method="POST" class="contact-form">
+            <div class="form-fields">
+                <div class="form-field">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-field">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Tu mensaje..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </div>
+        </form>
+        <!-- Información de Contacto -->
+        <div class="contact-info">
+            <h3>Información de Contacto</h3>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-envelope text-blue"></i>
+                    <span>jsbuitragoperdomo@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone text-blue"></i>
+                    <span>+57 3123587381 ó +57 3203931178</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt text-blue"></i>
+                    <span>Soacha, Cundinamarca</span>
                 </div>
             </div>
-            <!-- Información de Contacto -->
-            <div class="contact-info">
-                <h3>Información de Contacto</h3>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope text-blue"></i>
-                        <span>jsbuitragoperdomo@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone text-blue"></i>
-                        <span>+57 3123587381 ó +57 3203931178</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt text-blue"></i>
-                        <span>Soacha, Cundinamarca</span>
-                    </div>
-                </div>
-                <h3>Horario de disponibilidad</h3>
-                <p>Lunes - Viernes</p>
-                <p>8:00 AM - 6:00 PM UTC</p>
-            </div>
+            <h3>Horario de disponibilidad</h3>
+            <p>Lunes - Viernes</p>
+            <p>8:00 AM - 6:00 PM UTC</p>
         </div>
-    </section>
+    </div>
+</section>
 
     <script src="script.js"></script>
 </body>
