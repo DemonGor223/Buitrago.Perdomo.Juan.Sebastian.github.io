@@ -6,25 +6,11 @@
     <title>Mis Servicios</title>
     <link rel="stylesheet" href="servicios.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <style>
-      /* Estilo básico para el enlace del formulario */
-      .form-link {
-        margin-top: 10px;
-        font-weight: bold;
-      }
-      .form-link a {
-        color: #007BFF;
-        text-decoration: none;
-      }
-      .form-link a:hover {
-        text-decoration: underline;
-      }
-    </style>
 </head>
 <body>
     <section id="services-section" class="services-section">
         <div class="container">
-            <a href="#" class="back-link"><i class="fas fa-arrow-left"></i> Volver a Inicio</a>
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Volver a Inicio</a>
             <h1>Mis Servicios</h1>
             <p>Explora mis servicios y precios, Cada paquete está diseñado para satisfacer diferentes necesidades y presupuestos.</p>
 
@@ -41,8 +27,7 @@
                         <li>Opción ideal para emprendedores y micro empresas que buscan presencia online.</li>
                     </ul>
                     <div class="service-buttons">
-                        <a href="Pag_Bas.html" class="btn btn-primary">Ver Muestra</a>
-                        <button class="btn adquirir-btn">Adquirir</button>
+                        <button class="btn adquirir-btn" aria-label="Adquirir Página Web Básica">Adquirir</button>
                     </div>
                     <div class="form-link" style="display:none;"></div>
                 </div>
@@ -59,8 +44,7 @@
                         <li>Sesión de capacitación breve para manejo del CMS.</li>
                     </ul>
                     <div class="service-buttons">
-                        <button class="btn">Ver Muestra</button>
-                        <button class="btn adquirir-btn">Adquirir</button>
+                        <button class="btn adquirir-btn" aria-label="Adquirir Página Web Corporativa">Adquirir</button>
                     </div>
                     <div class="form-link" style="display:none;"></div>
                 </div>
@@ -69,20 +53,20 @@
                     <h3>Tienda Online Básica (E-commerce ligera ó detallada)</h3>
                     <p class="cost">Costo aproximado: $1.600.000 – $1.800.000 COP</p>
                     <ul>
-                        <li>Plataforma como WooCommerce (WordPress), Shopify o desarrollo a medida. </li>
+                        <li>Plataforma como WooCommerce (WordPress), Shopify o desarrollo a medida.</li>
                         <li>Catálogo hasta más de 50 productos, carrito de compras y facturación básica.</li>
                         <li>Integración de pasarelas de pago locales (PayU, MercadoPago, Wompi, Stripe).</li>
                         <li>Certificado SSL y optimización SEO inicial.</li>
                         <li>Configuración de dominio y hosting con soporte SSL.</li>
                     </ul>
                     <div class="service-buttons">
-                        <button class="btn">Ver Muestra</button>
-                        <button class="btn adquirir-btn">Adquirir</button>
+                        <button class="btn adquirir-btn" aria-label="Adquirir Tienda Online Básica">Adquirir</button>
                     </div>
                     <div class="form-link" style="display:none;"></div>
                 </div>
 
                 <div class="service-card">
+රuni>
                     <h3>Plataforma Web Personalizada (Marketplace, SaaS, etc.)</h3>
                     <p class="cost">Costo aproximado: $3.500.000 – $7.200.000 COP</p>
                     <ul>
@@ -93,13 +77,12 @@
                         <li>Mantenimiento y monitoreo inicial (1 mes).</li>
                     </ul>
                     <div class="service-buttons">
-                        <button class="btn">Ver Muestra</button>
-                        <button class="btn adquirir-btn">Adquirir</button>
+                        <button class="btn adquirir-btn" aria-label="Adquirir Plataforma Web Personalizada">Adquirir</button>
                     </div>
                     <div class="form-link" style="display:none;"></div>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card additional-costs">
                     <h3>Costos Adicionales (anuales / mensuales)</h3>
                     <ul>
                         <li>Dominio: $100.000 – $150.000 COP / año</li>
@@ -132,6 +115,12 @@
             formDiv.innerHTML = `<a href="${formularios[idx]}" target="_blank" rel="noopener noreferrer">Ir al Formulario de Adquisición</a>`;
             formDiv.style.display = 'block';
           });
+        });
+
+        const backLink = document.querySelector('.back-link');
+        backLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.location.href = 'index.html';
         });
       });
     </script>
